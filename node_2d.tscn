@@ -1,123 +1,54 @@
-[gd_scene format=4 uid="uid://d0clrh76wwdpj"]
+[gd_scene format=3 uid="uid://d0clrh76wwdpj"]
 
 [ext_resource type="Texture2D" uid="uid://dbwocvygr8dlj" path="res://menu.png" id="1_wtcfe"]
-[ext_resource type="Script" uid="uid://dtcoyb0xtgqob" path="res://game.gd" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://c61d8ckfnnxgg" path="res://menu.gd" id="2_0e48y"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
-texture = ExtResource("1_wtcfe")
-texture_region_size = Vector2i(16, 36)
-0:7/0 = 0
-0:8/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-3:8/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-5:7/0 = 0
-5:8/0 = 0
-6:8/0 = 0
-6:7/0 = 0
-2:7/0 = 0
-1:7/0 = 0
-4:8/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-1:11/0 = 0
-0:11/0 = 0
-2:11/0 = 0
-3:11/0 = 0
-4:11/0 = 0
-5:11/0 = 0
-5:10/0 = 0
-6:10/0 = 0
-6:11/0 = 0
-4:10/0 = 0
-3:10/0 = 0
-2:10/0 = 0
-0:12/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:14/0 = 0
-4:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-6:12/0 = 0
-5:12/0 = 0
-4:12/0 = 0
-3:12/0 = 0
-2:12/0 = 0
-1:12/0 = 0
-0:13/0 = 0
-0:14/0 = 0
-1:14/0 = 0
-2:14/0 = 0
-3:13/0 = 0
-6:14/0 = 0
-5:14/0 = 0
-4:14/0 = 0
-6:22/0 = 0
-6:21/0 = 0
-6:20/0 = 0
-6:19/0 = 0
-6:18/0 = 0
-5:18/0 = 0
-4:18/0 = 0
-3:18/0 = 0
-2:18/0 = 0
-1:18/0 = 0
-0:18/0 = 0
-0:19/0 = 0
-0:20/0 = 0
-0:21/0 = 0
-1:21/0 = 0
-1:22/0 = 0
-2:22/0 = 0
-2:21/0 = 0
-3:21/0 = 0
-4:21/0 = 0
-5:21/0 = 0
-5:20/0 = 0
-5:19/0 = 0
-3:19/0 = 0
-2:19/0 = 0
-1:19/0 = 0
-1:20/0 = 0
-2:20/0 = 0
-3:20/0 = 0
-4:20/0 = 0
-4:19/0 = 0
-5:22/0 = 0
-4:22/0 = 0
-3:22/0 = 0
-0:22/0 = 0
-0:15/0 = 0
-0:16/0 = 0
-1:16/0 = 0
-1:17/0 = 0
-2:17/0 = 0
-3:17/0 = 0
-4:17/0 = 0
-5:16/0 = 0
-6:16/0 = 0
-6:15/0 = 0
-6:17/0 = 0
-5:17/0 = 0
-4:16/0 = 0
-4:15/0 = 0
-3:15/0 = 0
-2:15/0 = 0
-1:15/0 = 0
-0:17/0 = 0
-2:16/0 = 0
-3:16/0 = 0
-5:15/0 = 0
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxpuj"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(11, 118.5, 97, 28)
 
-[sub_resource type="TileSet" id="TileSet_lvuym"]
-sources/4 = SubResource("TileSetAtlasSource_0e48y")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ili3l"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(11, 199.5, 97, 34)
 
-[node name="Node2D" type="Node2D" unique_id=155004087]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjb3n"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(9, 156.5, 100, 34)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=513388129]
-tile_map_data = PackedByteArray("AAABAAQABAAAAAoAAAABAAUABAAAAAsAAAABAAYABAAAAAwAAAABAAcABAAAAA0AAAABAAgABAAAAA4AAAACAAQABAABAAoAAAACAAUABAABAAsAAAACAAYABAABAAwAAAACAAcABAABAA0AAAACAAgABAABAA4AAAADAAQABAACAAoAAAADAAUABAACAAsAAAADAAYABAACAAwAAAADAAcABAACAA0AAAADAAgABAACAA4AAAAEAAQABAADAAoAAAAEAAUABAADAAsAAAAEAAYABAADAAwAAAAEAAcABAADAA0AAAAEAAgABAADAA4AAAAFAAQABAAEAAoAAAAFAAUABAAEAAsAAAAFAAYABAAEAAwAAAAFAAcABAAEAA0AAAAFAAgABAAEAA4AAAAGAAQABAAFAAoAAAAGAAUABAAFAAsAAAAGAAYABAAFAAwAAAAGAAcABAAFAA0AAAAGAAgABAAFAA4AAAAHAAQABAAGAAoAAAAHAAUABAAGAAsAAAAHAAYABAAGAAwAAAAHAAcABAAGAA0AAAAHAAgABAAGAA4AAAABAAEABAAAAAcAAAABAAIABAAAAAgAAAACAAEABAABAAcAAAACAAIABAABAAgAAAADAAEABAACAAcAAAADAAIABAACAAgAAAAEAAEABAADAAcAAAAEAAIABAADAAgAAAAFAAEABAAEAAcAAAAFAAIABAAEAAgAAAAGAAEABAAFAAcAAAAGAAIABAAFAAgAAAAHAAEABAAGAAcAAAAHAAIABAAGAAgAAAA=")
-tile_set = SubResource("TileSet_lvuym")
+[node name="Node2D" type="Node2D" unique_id=1338152619]
 script = ExtResource("2_0e48y")
+
+[node name="Gioca" type="TextureButton" parent="." unique_id=2101296157]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 239.0
+offset_top = 48.0
+offset_right = 393.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_wxpuj")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Optioni" type="TextureButton" parent="." unique_id=1115354560]
+offset_left = 239.0
+offset_top = 162.0
+offset_right = 390.0
+offset_bottom = 215.0
+texture_normal = SubResource("AtlasTexture_ili3l")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Esci" type="TextureButton" parent="." unique_id=254596116]
+offset_left = 237.0
+offset_top = 101.0
+offset_right = 396.0
+offset_bottom = 154.0
+texture_normal = SubResource("AtlasTexture_xjb3n")
+ignore_texture_size = true
+stretch_mode = 5
